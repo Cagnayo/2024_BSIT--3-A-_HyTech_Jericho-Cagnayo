@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>  
+    *{
+      margin:0;
+      padding:0;
+    }
+    .nav-link{
+      color:black;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor:pointer;
+      text-decoration: none;
+    }
+    .nav-link:hover{
+
+      color:white;
+      background-color: black;
+
+    }
+    .navbar-brand{
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+      
+    }
+    .main{
+      height: 100vh;
+      background: url(./main/Untitled\ design\ \(1\).png) no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      background-position: center;
+      padding: 0 10%
+    }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand font-weight-bold" href="#">My Personal Porfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="colllapse" data-target="#navbarNavaltMarkup"> 
+            <span class="navbar-toggle-icon"> </span>
+          </button>
+           
+          <div class= "collapse navbar-collapse" id="navbarNavaltMarkup"></div>
+            <div class="navbar-nav ml-auto">
+              <a  class="nav-link active px-lg-4 rounded " href="#"> Home</a>
+              <a  class="nav-link px-lg-4 rounded" href="#"> About</a>
+              <a  class="nav-link px-lg-4 rounded " href="#"> Portfolio</a>
+              <a  class="nav-link px-lg-4 rounded " href="#"> Contact </a>
+            </div>
+        </div>
+      </nav>
+      <section class="main py-5">
+          <div class="container py-5">
+              <div class="row py-5">
+                  <div class="col-lg-6">
+                    <h3><small>Hello, I'm </small> <br> 
+                    Jericho
+                  </h3>
+                  <h6> Web-Programmer</h6>
+                  <input type="button" value="MyWork" class="bt1-mt-5">
+                  <input type="button" value="About me" class="bt2-mt-5">
+                  </div>
+              </div>
+          </div>
+      </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
