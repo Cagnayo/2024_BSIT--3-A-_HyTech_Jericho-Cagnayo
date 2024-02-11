@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Personal Portfolio Website HTML CSS Only Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+<style>
+
+        * {   
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif; 
+
+}
+
+body {
+ background: #081b29;
+ color: #ededed;
+}
+
+.header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+
+}
+
+.logo {
+ font-size: 25px;
+ color: #ededed;
+ text-decoration: none;
+ font-weight: 600;
+}
+
+.navbar a {
+ font-size: 18px;
+ color: #ededed;
+ text-decoration: none;
+ font-weight: 500;
+ margin-left: 35px;
+ transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+ color: #00abf0;
+}
+
+
+.home {
+
+ height: 100vh;
+ display: flex;
+ align-items:  center;
+ padding: 0 10%;
+}
+
+.home-content {
+ max-width: 600px;
+}
+
+.home-content h1 {
+ font-size: 56px;
+ font-weight: 700;
+ line-height: 1.2;
+}
+
+.home-content h3 {
+ font-size: 32px;
+ font-weight: 700;
+ color: #00abf0
+}
+
+.home-content p {
+ font-size: 16px;
+ margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+ display: flex;
+ justify-content: space-between;
+ width: 345px;
+ height: 50px;
+}
+
+.btn-box a { 
+ position: relative;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 150px;
+ height: 100%;
+ background: #00abf0;
+ border: 2px solid #00abf0;
+ border-radius: 8px;
+ font-size: 19px;
+ color: #081b29;
+ text-decoration: none;
+ font-weight: 600;
+ letter-spacing: 1px;
+ z-index: 1;
+ overflow: hidden;
+ transition: .5s;
+}
+
+.btn-box a:hover {
+ color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+ background: transparent;
+ color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+ color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+ background: #00abf0;
+}
+
+.btn-box a::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 0;
+ height: 100%;
+ background: #081b29;
+ z-index: -1;
+ transition: .5s;
+
+} 
+
+.btn-box a:hover:before{
+ width: 100%;
+}
+
+.home-sci {
+ position: absolute;
+ bottom: 40px;
+ width: 170px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.home-sci a {
+ position: relative;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 40px;
+ height: 40px;
+ background: transparent;
+ border: 2px solid #00abf0;
+ border-radius: 50%;
+ font-size: 20px;
+ color: #00abf0;
+ text-decoration: none;
+ z-index: 1;
+ overflow: hidden;
+ transition: .5s;
+}
+
+.home-sci a:hover {
+ color: #081b29;
+}
+
+.home-sci a::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 0;
+ height: 100%;
+ background: #00abf0;
+ z-index: -1;
+ transition: .5s;
+
+}
+
+.home-sci a:hover:before{
+ width: 100%;
+}
+img{
+    height: 100%;
+    width: 70%;
+}
+
+</style>
+ <body>
+
+      <header class="header">  
+             <a href="#" class="logo">LUANSING.</a>
+
+             <nav class="navbar">
+                 <a href="#" class="active">Home</a>
+                 <a href="#" class="active">About</a>
+                 <a href="#" class="active">Services</a>
+                 <a href="#" class="active">Portfolio</a>
+                 <a href="#" class="active">Contact</a>
+             </nav>
+      </header>
+
+      <section class="home">
+    
+        <div class="home-content">
+            <h1>Hi, I'm Luansing</h1>
+            <h3> Frontend Developer</h3>
+            <p>I started learning to code and have since become interested in programming. I enjoy turning concepts into useful and powerful software. With a background in coding languages such as HTML, CSS, and JavaScript, I've engaged in different projects that have not only developed my technical talents but also fed my love for problem-solving and innovation. I stick to my goal of constant progress while navigating the ever-changing world of coding, constantly looking for new languages, frameworks, and techniques to add to my skill set. Technology's constant evolution drives me on, and with every line of code I write, I aim to not only solve the problems of today but also to foresee and shape the software development industry's future.. </p>
+            <div class="btn-box">
+                <a href="#">Hire me </a>
+                <a href="#">Let's Talk </a>
+            </div>
+            
+        </div>
+        
+        <img src="main/pic22.png">
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></i></a>
+        </div>
+      </section>
+    
+
+ </body>
+</html>
