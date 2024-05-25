@@ -7,10 +7,13 @@
     border: none;
     box-sizing: border-box;
 }
-
+.about{
+    background-color: #fff;
+}
 img{
     width: 100%;
     display: flex;
+    margin-top: -200px;
 }
 
 a{
@@ -67,8 +70,8 @@ nav{
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
-    color: #fff;
-    background-color: #1d4ed8;
+    color: black;
+    background-color: #fff;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
